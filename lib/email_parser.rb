@@ -9,6 +9,7 @@ class EmailParser
     @emails = emails
   end
   def parse
-    @emails.scan /\w+\@\w+.com/
+    em_array = @emails.scan /\w+\@\w+.com/
+    em_array.uniq!
   end
 end
