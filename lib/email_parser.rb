@@ -9,6 +9,6 @@ class EmailParser
     @emails = emails
   end
   def parse
-    @emails.scan /.+[^, ]/
+    @emails.scan /\w+\@\w+.com/
   end
 end
