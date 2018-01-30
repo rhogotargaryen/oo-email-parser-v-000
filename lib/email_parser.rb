@@ -11,5 +11,6 @@ class EmailParser
   def parse
     em_array = @emails.scan /\w+\@\w+.com/
     em_array.uniq!
+    em_array
   end
 end
